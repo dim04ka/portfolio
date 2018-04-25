@@ -1,0 +1,51 @@
+.header {
+    background-color: #b8b8b8;
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        color: #60606e;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 50px 0;
+        a {
+            color: #60606e;
+            font-size: 28px;
+            cursor: pointer;
+        }
+    }
+    &__title {
+        color: #60606e;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__menu {
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            padding: 20px 0;
+            li {
+                a {
+                    color: #60606e;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 0 5px;
+                    &:first-child:after{
+                        content: "/";
+                        padding: 0 1px;
+                    }
+                }
+                
+            }
+
+        }
+    }
+}

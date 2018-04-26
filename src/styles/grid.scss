@@ -25,5 +25,9 @@ html {
     width: 25%; 
   }
 }
-  
+@media (max-width: 1140px) {
+  .container {
+    width: 95%;
+  }
 
+}

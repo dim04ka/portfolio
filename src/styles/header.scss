@@ -1,5 +1,5 @@
 .header {
-    background-color: #b8b8b8;
+    background-color: #dcdcdc;
     &__logo {
         display: flex;
         justify-content: space-between;
@@ -14,6 +14,9 @@
             color: #60606e;
             font-size: 28px;
             cursor: pointer;
+            &:hover i{
+                color: #4a826f;
+            }
         }
     }
     &__title {
@@ -23,6 +26,20 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
+    }
+    &__middle {
+        height: 400px;
+        background-color: #dcdcdc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 1s;
+        overflow: hidden;
+        &-active {
+            height: 0px;
+            overflow: hidden;
+            transition: all 1s;
+        }
     }
     &__menu {
         ul {
@@ -37,13 +54,19 @@
                     font-size: 14px;
                     font-weight: 700;
                     text-transform: uppercase;
-                    padding: 0 5px;
-                    &:first-child:after{
-                        content: "/";
-                        padding: 0 1px;
+                    text-decoration: none;
+                    &:hover {
+                        color: #4a826f;
                     }
+
                 }
-                
+                &:first-child:after{
+                    content: "/";
+                    margin: 5px;
+                    font-family: Montserrat;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
             }
 
         }
